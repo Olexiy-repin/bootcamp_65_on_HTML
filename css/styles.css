@@ -1,0 +1,391 @@
+/* Variables */
+:root {
+  /* Fonts */
+  --main-font: 'Montserrat', sans-serif;
+  /* Colors */
+  --main-cl: #111111;
+  --primary-cl: ;
+  --secondary-cl: ;
+  --accent-cl: #fd9222;
+  --light-cl: #fff;
+  --light-cl-70: rgba(255, 255, 255, 0.7);
+
+  /* Background colors */
+  --main-bg-cl: #fafafa;
+  --light-bg-cl: rgba(17, 17, 17, 0.7);
+  --dark-bg-cl: #1e1823;
+
+  /* Other */
+}
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+  font-family: var(--main-font);
+  color: var(--main-cl);
+  background-color: var(--main-bg-cl);
+  /**
+  Default properties:
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  */
+}
+/* reset start */
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+/* reset end */
+
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--primary-cl);
+}
+.section-title-accent {
+  color: var(--accent-cl);
+}
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--light-cl);
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-accent {
+  background-color: var(--accent-cl);
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--accent-cl);
+  background-color: var(--beige-bg-cl);
+}
+.btn-light {
+  color: var(--light-cl);
+}
+.btn-light:hover,
+.btn-light:focus {
+  color: var(--accent-cl);
+}
+.btn-dark {
+  font-size: 18px;
+  color: currentColor;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  color: var(--light-cl);
+  background-color: var(--accent-cl);
+}
+
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.header {
+}
+.header-nav {
+}
+.header-logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+.header-logo-italic {
+  font-style: italic;
+}
+.header-logo-icon {
+}
+.header-list {
+}
+.header-list-item {
+}
+.header-list-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.header-list-link:hover,
+.header-list-link:focus {
+  color: var(--accent-cl);
+}
+.header-socials {
+}
+.header-socials-item {
+}
+.header-socials-link {
+}
+.header-socials-icon {
+}
+/**
+  |============================
+  | Hero styles
+  |============================
+*/
+.hero {
+  background-color: var(--light-bg-cl);
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--light-cl);
+}
+/**
+  |============================
+  | Benefits styles
+  |============================
+*/
+.benefits {
+  background-color: var(--dark-bg-cl);
+}
+.benefits-list {
+}
+.benefits-list-item {
+}
+.benefits-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--light-cl);
+}
+.benefits-list-desc {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--light-cl-70);
+}
+/**
+  |============================
+  | Ingridients styles
+  |============================
+*/
+.ingridients {
+}
+.ingridients-list {
+}
+.ingridients-item {
+  background-color: var(--light-cl);
+}
+.ingridients-img {
+}
+.ingridients-caption {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/**
+  |============================
+  | Made styles
+  |============================
+*/
+.made {
+}
+.made-title {
+}
+.made-pic {
+}
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.made-list {
+}
+.made-item {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+/**
+  |============================
+  | Products styles
+  |============================
+*/
+.products {
+  background-color: var(--light-bg);
+}
+.products-title {
+}
+.products-list {
+}
+.products-item {
+  background: var(--light-cl);
+}
+.products-ill {
+}
+.products-heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.products-category {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--additional-cl);
+}
+.products-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  background-color: var(--main-bg-cl);
+}
+/**
+  |============================
+  | Bestsellers styles
+  |============================
+*/
+.bestsellers {
+}
+.bestsellers-title {
+}
+.bestsellers-list {
+}
+.bestsellers-item {
+  background-color: var(--light-cl);
+}
+.bestsellers-img {
+}
+.bestsellers-caption {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/**
+  |============================
+  | Reviews styles
+  |============================
+*/
+.reviews {
+}
+.reviews-title {
+}
+.reviews-list {
+}
+.reviews-item {
+  background-color: var(--light-cl);
+}
+.reviews-avatar {
+}
+.reviews-author {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--additional-cl);
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+.footer-slogan {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--light-cl);
+}
+.footer-slogan-accent {
+  color: var(--accent-cl);
+}
+.footer-address {
+  font-style: normal;
+}
+.footer-address-subject {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--light-cl);
+}
+.footer-socials {
+}
+.footer-contatcs {
+}
+.footer-menu {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--light-cl);
+}
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--accent-cl);
+}
+/* Socials */
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+
+/* Contacts */
+.contacts {
+}
+.contacts-item {
+}
+.contacts-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--light-cl);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-cl);
+}
