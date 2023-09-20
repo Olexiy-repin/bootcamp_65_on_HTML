@@ -38,17 +38,41 @@ body {
   */
 }
 /* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul,
 ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+  color: currentColor;
+}
+
+img {
+  display: block;
+}
+
+.list {
   list-style-type: none;
 }
-a {
+
+.link {
   text-decoration: none;
-  color: currentColor;
-}
-button {
-  font-family: inherit;
-  color: currentColor;
 }
 /* reset end */
 
@@ -57,6 +81,19 @@ button {
   | Base styles
   |============================
 */
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .section-title {
   font-weight: 600;
   font-size: 24px;
@@ -65,7 +102,9 @@ button {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--primary-cl);
+  margin-bottom: 50px;
 }
+
 .section-title-accent {
   color: var(--accent-cl);
 }
@@ -150,14 +189,31 @@ button {
   |============================
 */
 .hero {
+  max-width: 1136px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 381px 40px 40px 40px;
+  border-radius: 30px;
   background-color: var(--light-bg-cl);
 }
+
 .hero-title {
+  width: 484px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--light-cl);
+  margin-bottom: 32px;
+}
+
+.hero-buy-now-btn {
+  min-width: 144px;
+  height: 45px;
+  border-radius: 100px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /**
   |============================
@@ -165,6 +221,10 @@ button {
   |============================
 */
 .benefits {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--dark-bg-cl);
 }
 .benefits-list {
@@ -189,12 +249,31 @@ button {
   |============================
 */
 .ingridients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.ingridients-title {
+  width: 412px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ingridients-list {
 }
-.ingridients-item {
+
+.ingridients-item:nth-child(even) {
   background-color: var(--light-cl);
 }
+
+.ingridients-item:nth-child(4n + 1) {
+  background-color: var(--accent-cl);
+}
+
+.ingridients-item:nth-child(4n + 3) {
+  background-color: var(--dark-bg-cl);
+}
+
 .ingridients-img {
 }
 .ingridients-caption {
